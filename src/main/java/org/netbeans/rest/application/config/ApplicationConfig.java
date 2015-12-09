@@ -10,7 +10,6 @@ import javax.ws.rs.core.Application;
 
 /**
  *
- * @author stefan
  */
 @javax.ws.rs.ApplicationPath("webresources")
 public class ApplicationConfig extends Application {
@@ -29,8 +28,10 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(rs.htec.rest.entities.services.CmsRoleRESTEndpoint.class);
         resources.add(rs.htec.rest.entities.services.CmsTablesRESTEndpoint.class);
         resources.add(rs.htec.rest.entities.services.CmsUserRESTEndpoint.class);
+        resources.add(rs.htec.rest.entities.services.NewsRESTEndpoint.class);
     }
     
 }

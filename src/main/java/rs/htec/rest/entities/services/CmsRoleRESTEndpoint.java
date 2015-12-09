@@ -11,21 +11,21 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import rs.htec.rest.beans.CmsUserBean;
+import rs.htec.rest.beans.CmsRoleBean;
 
 /**
  *
  * @author marko
  */
-@Path("/cmsUsers")
-public class CmsUserRESTEndpoint {
+@Path("/roles")
+public class CmsRoleRESTEndpoint {
     
     @EJB
-    private CmsUserBean userBean;
+    private CmsRoleBean roleBean;
     
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getUsers(){
-        return Response.ok().entity(userBean.findAll()).build();
+    public Response gerRoles(){
+        return Response.ok().entity(roleBean.findAll()).build();
     }
 }
