@@ -1,0 +1,8 @@
+{
+  "realm": "demo",
+  "realm-public-key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlFXmocV0+lNblNc9IdW0G7nhtTBiSIrkVbuJhNSnugteaTD0a7ZnT0ioiPIC3lxdacdl/arPRVYduvoUCsFBJvOePJoTMs7W6F2aV32BHFmh5j3cdKZ9ZLVoot4DBILciPxY8fhRd7B9IrKDPZKcaeyI7/grgOLUgqpZsy5oaFfxBIy4bJl6NmoV+85IjlWiiau8QLC8bnSVQbl0EafLLOV0ucgfnV3nhBrfUA1a58b4yt+SEq6P4TrKmMEMP2ZunKyFvTQuPIzrkK6SRVBQ8bsBMk0MVyhAFemgMWMo885MZD0uBv2IN+e17QyewxLJvn/eBiBdUNYMEqDS18FmMQIDAQAB",
+  "bearer-only": true,
+  "auth-server-url": "http://localhost:8080/auth",
+  "ssl-required": "external",
+  "resource": "RESTEasyTest"
+}

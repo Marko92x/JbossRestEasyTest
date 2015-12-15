@@ -5,24 +5,23 @@
  */
 package rs.htec.rest.entities.services;
 
-import javax.ejb.EJB;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import rs.htec.rest.beans.CmsUserBean;
+import rs.htec.rest.keycloak.KeycloakUser;
 
 /**
  *
  * @author marko
  */
-@Path("/cmsUsers")
-public class CmsUserRESTEndpoint implements RestInterface {
-    
-    @EJB
-    private CmsUserBean userBean;
-    
-    
-    @Override
-    public Response getUsers(){
-        return Response.ok().entity(userBean.findAll()).build();
-    }
+@Path("users")
+public class UserRESTEndpoint {
+//    
+//    @POST
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Response createUser(){
+//        
+//    }
 }

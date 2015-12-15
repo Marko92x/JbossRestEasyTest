@@ -24,6 +24,7 @@ public class CmsRoleRESTEndpoint {
     private CmsRoleBean roleBean;
     
     @GET
+    @Path("/role")
     @Produces(MediaType.APPLICATION_JSON)
     public Response gerRoles(){
         return Response.ok().entity(roleBean.findAll()).build();
