@@ -32,7 +32,7 @@
         <param-value>/rest</param-value>
     </context-param>
     
-<!--    <filter>
+    <filter>
         <filter-name>CorsFilter</filter-name>
         <filter-class>com.thetransactioncompany.cors.CORSFilter</filter-class>
         <init-param>
@@ -59,14 +59,14 @@
     <filter-mapping>
         <filter-name>CorsFilter</filter-name>
         <url-pattern>/rest/*</url-pattern>
-    </filter-mapping>-->
+    </filter-mapping>
     
     <module-name>RESTEasyTest</module-name>
     
     <security-constraint>
         <web-resource-collection>
             <web-resource-name>CmsUsers</web-resource-name>
-            <url-pattern>/rest/*</url-pattern>
+            <url-pattern>/rest/cmsUsers/*</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>user</role-name>
@@ -75,7 +75,7 @@
     
     <login-config>
         <auth-method>KEYCLOAK</auth-method>
-        <realm-name>demo</realm-name>
+        <realm-name>dev</realm-name>
     </login-config>
     
     <security-role>

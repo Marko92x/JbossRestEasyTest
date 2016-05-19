@@ -31,6 +31,8 @@ public class ApplicationConfig extends Application {
         resources.add(rs.htec.rest.entities.services.CmsRoleRESTEndpoint.class);
         resources.add(rs.htec.rest.entities.services.CmsTablesRESTEndpoint.class);
         resources.add(rs.htec.rest.entities.services.CmsUserRESTEndpoint.class);
+        resources.add(rs.htec.rest.entities.services.FileUpload.class);
+        resources.add(rs.htec.rest.entities.services.FileUploadBase64.class);
         resources.add(rs.htec.rest.entities.services.NewsRESTEndpoint.class);
         resources.add(rs.htec.rest.entities.services.UserRESTEndpoint.class);
     }
